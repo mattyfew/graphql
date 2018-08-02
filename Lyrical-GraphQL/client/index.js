@@ -13,6 +13,7 @@ import SongDetail from './components/SongDetail'
 const client = new ApolloClient({
     // this takes the ID off of every record and gives apollo a way to remember that record
     // this will allow for rerendering when a single record is updated.
+    // the alternative to this is to use refetchQueries
     dataIdFromObject: o => o.id
 })
 
